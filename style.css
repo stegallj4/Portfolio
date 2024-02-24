@@ -19,18 +19,23 @@ img{
 }
 
 nav{
-    padding: 29px 148px;
-    background-color: #fff;
+    padding: 20px 148px 20px 100px;
+    background-color:#ffffff00;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-weight: 600;
+    width: 100%;
 }
 
 nav .logo{
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 6px 10px;
+    background: rgba(138, 138, 138, 0.144);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav .logo img{
@@ -45,18 +50,27 @@ nav .logo a{
     font-weight: bold;
 }
 
+nav .logo:hover{
+    box-shadow: none;
+}
+
 nav .nav-links{
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 nav .nav-links a{
+    padding: 6px 10px;
     transition: color 0.3s ease;
+    background: rgba(138, 138, 138, 0.144);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav .nav-links a:hover,
 nav .nav-links a.selected{
     color: #303f9f;
+    box-shadow: none;
 }
 
 .main{
@@ -79,7 +93,8 @@ nav .nav-links a.selected{
     width: 100%;
 }
 
-.main .info button{
+.main .info button,
+.content .post-list .post-item .buttons button{
     padding: 10px 30px;
     background: #303f9f;
     border: none;
@@ -276,4 +291,46 @@ footer p{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.content .post-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .post-list .post-item{
+    background-color: #dbedf2;
+    padding: 24px;
+    width: 960px;
+    border-radius: 10px;
+}
+
+.content .post-list .post-item .buttons{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.content .post-list .post-item .buttons button{
+    font-size: 14px;
+    padding: 6px 15px;
+}
+
+.content .post-list .post-item .buttons button:hover{
+    background-color: #172162;
+    transform: scale(102%);
+
+}
+
+.content .post-list .post-item .buttons i{
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.content .post-list .post-item .buttons i:hover{
+    color:#303f9f
 }
