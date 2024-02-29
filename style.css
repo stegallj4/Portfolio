@@ -44,7 +44,7 @@ nav .logo img{
     border-radius: 50%;
 }
 
-nav .logo a{
+nav .logo p{
     font-size: 15px;
     color: #3e3e3e;
     font-weight: bold;
@@ -117,10 +117,11 @@ nav .nav-links a.selected{
 
 .recent{
     padding: 60px 148px;
-    background-color: #dbedf2;
+
 }
 
-.recent .header{
+.recent .header,
+.featured .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,12 +129,13 @@ nav .nav-links a.selected{
 }
 
 .recent .header h4,
-.separator h4{
+.featured .header h4{
     font-size: 20px;
     font-weight: 400;
 }
 
-.recent .header a{
+.recent .header a,
+.featured .header a{
     color: #303f9f;
 }
 
@@ -144,9 +146,16 @@ nav .nav-links a.selected{
 }
 
 .recent .posts .post-item{
-    background-color: #fff;
+    background-color: #dbedf2;
     padding: 24px;
     width: 460px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recent .posts .post-item:hover{
+    cursor: pointer;
+    box-shadow: none;
 }
 
 .recent .posts .post-item h3{
@@ -171,6 +180,7 @@ nav .nav-links a.selected{
 
 .separator{
     padding: 40px 148px 0;
+    background-color: #dbedf2;
 }
 
 .separator h4{
@@ -179,6 +189,11 @@ nav .nav-links a.selected{
 
 .featured{
     padding: 40px 290px 0;
+    background-color: #dbedf2;
+}
+
+.featured .header{
+    margin-bottom: 30px;
 }
 
 .featured .item,
